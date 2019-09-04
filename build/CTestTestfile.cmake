@@ -1,0 +1,37 @@
+# CMake generated Testfile for 
+# Source directory: /home/sahil/catkin_ws/src
+# Build directory: /home/sahil/catkin_ws/build
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+subdirs(gtest)
+subdirs(rosserial)
+subdirs(rosserial_arduino)
+subdirs(rosserial_mbed)
+subdirs(rosserial_msgs)
+subdirs(rosserial_python)
+subdirs(rosserial_tivac)
+subdirs(rosserial_vex_cortex)
+subdirs(rosserial_vex_v5)
+subdirs(rosserial_xbee)
+subdirs(rosserial_client)
+subdirs(autoz)
+subdirs(ros_essentials_cpp)
+subdirs(rosserial_server)
+subdirs(img_to_laser)
+subdirs(rplidar_ros)
+subdirs(differential-drive/Differential-Drive-Package--master)
+subdirs(ira_laser_tools)
+subdirs(point_cloud)
+subdirs(r2d2)
+subdirs(rosserial_embeddedlinux)
+subdirs(rosserial_test)
+subdirs(rosserial_windows)
+subdirs(open_street_map/osm_cartography)
+subdirs(open_street_map/route_network)
+subdirs(chefbot_bringup)
+subdirs(rviz_satellite)
+subdirs(open_street_map/test_osm)
+subdirs(usb_cam)
+subdirs(chefbot_description)
+subdirs(chefbot_gazebo)

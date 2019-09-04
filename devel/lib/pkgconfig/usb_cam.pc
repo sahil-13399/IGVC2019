@@ -1,0 +1,8 @@
+prefix=/home/sahil/catkin_ws/devel
+
+Name: usb_cam
+Description: Description of usb_cam
+Version: 0.3.6
+Cflags: -I/home/sahil/catkin_ws/src/usb_cam/include
+Libs: -L/home/sahil/catkin_ws/devel/lib -lusb_cam
+Requires: 

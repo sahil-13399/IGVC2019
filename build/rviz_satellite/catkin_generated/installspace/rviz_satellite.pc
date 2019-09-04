@@ -1,0 +1,8 @@
+prefix=/home/sahil/catkin_ws/install
+
+Name: rviz_satellite
+Description: Description of rviz_satellite
+Version: 1.2.0
+Cflags: 
+Libs: -L/home/sahil/catkin_ws/install/lib 
+Requires: nav_msgs sensor_msgs
