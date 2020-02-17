@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: osm_cartography
+Version: 0.2.4
+Summary: Geographic mapping using Open Street Map data.
+Home-page: http://ros.org/wiki/osm_cartography
+Author: Jack O'Quin
+Author-email: jack.oquin@gmail.com
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN

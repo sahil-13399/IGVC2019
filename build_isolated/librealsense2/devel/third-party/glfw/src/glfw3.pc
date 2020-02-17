@@ -1,0 +1,13 @@
+prefix=/home/sahil/catkin_ws/devel_isolated/librealsense2
+exec_prefix=${prefix}
+includedir=/home/sahil/catkin_ws/devel_isolated/librealsense2/include
+libdir=/home/sahil/catkin_ws/devel_isolated/librealsense2/lib
+
+Name: GLFW
+Description: A multi-platform library for OpenGL, window and input
+Version: 3.3.0
+URL: https://www.glfw.org/
+Requires.private:  x11
+Libs: -L${libdir} -lglfw3
+Libs.private:  -lrt -lm -ldl
+Cflags: -I${includedir}

@@ -1,0 +1,8 @@
+prefix=/home/sahil/catkin_ws/install_isolated
+
+Name: autoz
+Description: Description of autoz
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/sahil/catkin_ws/install_isolated/lib 
+Requires: 

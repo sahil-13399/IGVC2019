@@ -8,7 +8,7 @@ class SpeedListener:
 		self.lmotor_cmd=0
 		self.rmotor_cmd=0
 		if sending_speed_to_motor_driver:
-			self.s = serial.Serial('/dev/ttyACM0',9600)
+			self.s = serial.Serial('/dev/ttyACM2',9600)
 
 	def send_serially(self):
 		##print("Sending send_serially")

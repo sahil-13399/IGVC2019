@@ -16,7 +16,8 @@ def road_lines(original_image):
 	red_chan=top_view[:,:,0]
 	th, binary_warped = cv2.threshold(red_chan, 240, 255, cv2.THRESH_BINARY)
 	image = cv2.medianBlur(binary_warped,11 )
-	histogram = np.sum(image[np.int(binary_warped.shape[0]/2):,:], axis=0)
+	return(image)
+	'''histogram = np.sum(image[np.int(binary_warped.shape[0]/2):,:], axis=0)
 	out_img = np.dstack((binary_warped, binary_warped, binary_warped))*255
 	midpoint = np.int(histogram.shape[0]/2)
 	leftx_base = np.argmax(histogram[:midpoint])
@@ -31,9 +32,9 @@ def road_lines(original_image):
 	margin = 100
 	minpix = 50
 	left_lane_inds = []
-	right_lane_inds = []
+	right_lane_inds = []'''
 	#nwind=0
-	for window in range(nwindows):
+'''	for window in range(nwindows):
 		#nwind=nwind+1
 		win_y_low = binary_warped.shape[0] - (window+1)*window_height
 		win_y_high = binary_warped.shape[0] - window*window_height
@@ -101,3 +102,4 @@ def road_lines(original_image):
 # 	print("y=",y)
 # cap.release()
 # cv2.destroyAllWindows()
+'''

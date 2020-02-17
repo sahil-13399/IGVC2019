@@ -448,7 +448,7 @@
 
 
   
-<joint type="revolute" name="right_wheel_hinge">
+<joint name="right_wheel" type="revolute">
 
 	<limit effort="4" lower="0" upper="6.28" velocity="10"/>
         <origin xyz="0.29 -.17 -.155" rpy="0 1.5707 0"/>
@@ -457,7 +457,7 @@
         <axis xyz="0 0 0"/>
 </joint>
 
-<joint type="revolute" name="left_wheel_hinge">
+<joint name="left_wheel" type="revolute">
 
 	<limit effort="4" lower="0" upper="6.28" velocity="10"/>
         <origin xyz="-.29 -.17 -.155" rpy="0 1.5707 0"/>
@@ -469,14 +469,14 @@
 
 <joint name="camera_rgb_joint" type="fixed">
       <origin xyz="-0.09 0 0.25"
-              rpy="0 0 0"/>
+              rpy="0 0 2.35"/>
       <parent link="base_link"/>
       <child link="camera_rgb_frame" />
     </joint>
     <link name="camera_rgb_frame"/>
 
 <joint name="camera_rgb_optical_joint" type="fixed">
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin xyz="0 0 0" rpy="0 0 2.35" />
       <parent link="camera_rgb_frame" />
       <child link="camera_rgb_optical_frame" />
     </joint>
@@ -485,14 +485,14 @@
 
 
 <joint name="camera_depth_joint" type="fixed">
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin xyz="0 0 0" rpy="0 0 2.35" />
       <parent link="camera_rgb_frame" />
       <child link="camera_depth_frame" />
     </joint>
     <link name="camera_depth_frame"/>
 
 <joint name="camera_depth_optical_joint" type="fixed">
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin xyz="0 0 0" rpy="0 0 2.35" />
       <parent link="camera_depth_frame" />
       <child link="camera_depth_optical_frame" />
     </joint>

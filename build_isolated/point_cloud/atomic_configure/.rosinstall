@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/sahil/catkin_ws/devel_isolated/point_cloud/setup.sh

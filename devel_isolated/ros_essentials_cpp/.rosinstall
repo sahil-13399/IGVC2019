@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/sahil/catkin_ws/devel_isolated/ros_essentials_cpp/setup.sh

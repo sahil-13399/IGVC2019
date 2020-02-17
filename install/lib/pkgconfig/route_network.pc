@@ -1,0 +1,8 @@
+prefix=/home/sahil/catkin_ws/install
+
+Name: route_network
+Description: Description of route_network
+Version: 0.2.4
+Cflags: -I/home/sahil/catkin_ws/install/include
+Libs: -L/home/sahil/catkin_ws/install/lib 
+Requires: dynamic_reconfigure geodesy geographic_msgs geometry_msgs nav_msgs rospy visualization_msgs

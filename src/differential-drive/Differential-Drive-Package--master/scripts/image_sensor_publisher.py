@@ -39,7 +39,7 @@ def publisher():
 	rospy.init_node('CameraSensorNode',anonymous=False)
 	pub = rospy.Publisher('/front_view', Image, queue_size=10)
 	rate = rospy.Rate(rospy.get_param("~rate", 50))
-	cap = cv2.VideoCapture(0)
+	cap = cv2.VideoCapture(1)
 
 	image_converter = ImageConverter()
 	FPS = cap.get(cv2.CAP_PROP_FPS)

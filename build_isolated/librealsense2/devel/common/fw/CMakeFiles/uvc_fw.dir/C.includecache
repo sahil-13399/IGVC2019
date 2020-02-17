@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sahil/catkin_ws/build_isolated/librealsense2/devel/common/fw/D4XX_FW_Image.c
+
+/home/sahil/catkin_ws/build_isolated/librealsense2/devel/common/fw/D4XX_RC_Image.c
+
+/home/sahil/catkin_ws/build_isolated/librealsense2/devel/common/fw/SR3XX_FW_Image.c
+
+/home/sahil/catkin_ws/build_isolated/librealsense2/devel/common/fw/target.c
+
+/home/sahil/catkin_ws/src/librealsense/common/fw/empty.c
+

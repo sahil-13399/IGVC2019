@@ -1,0 +1,1 @@
+/usr/bin/cc     -pedantic -g -D_DEFAULT_SOURCE   -mssse3 -pthread   CMakeFiles/rs-color.dir/rs-color.c.o  -o rs-color -rdynamic ../../../librealsense2.so.2.32.1 ../../../third-party/glfw/src/libglfw3.a -lGLU -lGL -lrt -lm -ldl -lX11 -Wl,-rpath,/home/sahil/catkin_ws/build_isolated/librealsense2/devel: 

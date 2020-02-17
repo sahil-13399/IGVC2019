@@ -110,17 +110,6 @@ install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -375,7 +364,6 @@ help:
 	@echo "... rosserial_arduino_generate_messages_py"
 	@echo "... rosserial_arduino_gennodejs"
 	@echo "... rosserial_arduino_generate_messages_nodejs"
-	@echo "... test"
 	@echo "... rosserial_arduino_generate_messages_eus"
 	@echo "... _rosserial_arduino_generate_messages_check_deps_Adc"
 	@echo "... install"

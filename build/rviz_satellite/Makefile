@@ -68,17 +68,6 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -90,16 +79,16 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
 
-# Special rule for the target test
-test/fast: test
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
 
-.PHONY : test/fast
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -181,21 +170,6 @@ map_msgs_generate_messages_lisp/fast:
 .PHONY : map_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
-rviz_satellite/CMakeFiles/map_msgs_generate_messages_eus.dir/rule:
-	cd /home/sahil/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rviz_satellite/CMakeFiles/map_msgs_generate_messages_eus.dir/rule
-.PHONY : rviz_satellite/CMakeFiles/map_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-map_msgs_generate_messages_eus: rviz_satellite/CMakeFiles/map_msgs_generate_messages_eus.dir/rule
-
-.PHONY : map_msgs_generate_messages_eus
-
-# fast build rule for target.
-map_msgs_generate_messages_eus/fast:
-	cd /home/sahil/catkin_ws/build && $(MAKE) -f rviz_satellite/CMakeFiles/map_msgs_generate_messages_eus.dir/build.make rviz_satellite/CMakeFiles/map_msgs_generate_messages_eus.dir/build
-.PHONY : map_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
 rviz_satellite/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule:
 	cd /home/sahil/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rviz_satellite/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule
 .PHONY : rviz_satellite/CMakeFiles/map_msgs_generate_messages_nodejs.dir/rule
@@ -239,6 +213,21 @@ rviz_satellite: rviz_satellite/CMakeFiles/rviz_satellite.dir/rule
 rviz_satellite/fast:
 	cd /home/sahil/catkin_ws/build && $(MAKE) -f rviz_satellite/CMakeFiles/rviz_satellite.dir/build.make rviz_satellite/CMakeFiles/rviz_satellite.dir/build
 .PHONY : rviz_satellite/fast
+
+# Convenience name for target.
+rviz_satellite/CMakeFiles/map_msgs_generate_messages_eus.dir/rule:
+	cd /home/sahil/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rviz_satellite/CMakeFiles/map_msgs_generate_messages_eus.dir/rule
+.PHONY : rviz_satellite/CMakeFiles/map_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+map_msgs_generate_messages_eus: rviz_satellite/CMakeFiles/map_msgs_generate_messages_eus.dir/rule
+
+.PHONY : map_msgs_generate_messages_eus
+
+# fast build rule for target.
+map_msgs_generate_messages_eus/fast:
+	cd /home/sahil/catkin_ws/build && $(MAKE) -f rviz_satellite/CMakeFiles/map_msgs_generate_messages_eus.dir/build.make rviz_satellite/CMakeFiles/map_msgs_generate_messages_eus.dir/build
+.PHONY : map_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 rviz_satellite/CMakeFiles/map_msgs_generate_messages_py.dir/rule:
@@ -398,13 +387,12 @@ help:
 	@echo "... depend"
 	@echo "... install"
 	@echo "... map_msgs_generate_messages_lisp"
-	@echo "... rebuild_cache"
-	@echo "... map_msgs_generate_messages_eus"
 	@echo "... edit_cache"
 	@echo "... map_msgs_generate_messages_nodejs"
-	@echo "... test"
 	@echo "... map_msgs_generate_messages_cpp"
 	@echo "... rviz_satellite"
+	@echo "... map_msgs_generate_messages_eus"
+	@echo "... rebuild_cache"
 	@echo "... map_msgs_generate_messages_py"
 	@echo "... list_install_components"
 	@echo "... install/strip"

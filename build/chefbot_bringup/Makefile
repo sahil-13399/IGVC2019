@@ -122,17 +122,6 @@ install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # The main all target
 all: cmake_check_build_system
 	cd /home/sahil/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/sahil/catkin_ws/build/CMakeFiles /home/sahil/catkin_ws/build/chefbot_bringup/CMakeFiles/progress.marks
@@ -394,7 +383,6 @@ help:
 	@echo "... depthimage_to_laserscan_gencfg"
 	@echo "... move_base_msgs_generate_messages_nodejs"
 	@echo "... move_base_msgs_generate_messages_py"
-	@echo "... test"
 	@echo "... move_base_msgs_generate_messages_eus"
 	@echo "... robot_pose_ekf_generate_messages_lisp"
 	@echo "... src/send_robot_goal.o"

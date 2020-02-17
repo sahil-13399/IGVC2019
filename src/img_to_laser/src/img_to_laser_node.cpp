@@ -27,7 +27,7 @@ public:
     // Filling up virtual scan data.
     ros::Time scan_time = ros::Time::now();
     scan_.header.stamp = scan_time;
-    scan_.header.frame_id = "laser_scan";
+    scan_.header.frame_id = "camera_rgb_frame";
     scan_.angle_min = -PI + INCREMENT;
     scan_.angle_max = PI;
     scan_.angle_increment = INCREMENT;

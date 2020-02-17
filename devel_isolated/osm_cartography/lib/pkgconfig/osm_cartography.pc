@@ -1,0 +1,8 @@
+prefix=/home/sahil/catkin_ws/devel_isolated/osm_cartography
+
+Name: osm_cartography
+Description: Description of osm_cartography
+Version: 0.2.4
+Cflags: -I/home/sahil/catkin_ws/devel_isolated/osm_cartography/include
+Libs: -L/home/sahil/catkin_ws/devel_isolated/osm_cartography/lib 
+Requires: dynamic_reconfigure geodesy geographic_msgs geometry_msgs rospy tf std_msgs visualization_msgs

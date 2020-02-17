@@ -1,0 +1,8 @@
+prefix=/home/sahil/catkin_ws/install_isolated
+
+Name: chefbot_description
+Description: Description of chefbot_description
+Version: 0.0.1
+Cflags: 
+Libs: -L/home/sahil/catkin_ws/install_isolated/lib 
+Requires: 

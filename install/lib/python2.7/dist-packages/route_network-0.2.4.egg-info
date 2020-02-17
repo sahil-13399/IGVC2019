@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: route_network
+Version: 0.2.4
+Summary: Route network graphing and path planning.
+Home-page: http://ros.org/wiki/route_network
+Author: Jack O'Quin
+Author-email: jack.oquin@gmail.com
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN

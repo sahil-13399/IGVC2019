@@ -1,0 +1,8 @@
+prefix=/home/sahil/catkin_ws/install_isolated
+
+Name: rosserial_tivac
+Description: Description of rosserial_tivac
+Version: 0.8.0
+Cflags: 
+Libs: -L/home/sahil/catkin_ws/install_isolated/lib 
+Requires: 

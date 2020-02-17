@@ -112,17 +112,6 @@ install/local/fast: install/local
 
 .PHONY : install/local/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -1174,7 +1163,6 @@ help:
 	@echo "... install/local"
 	@echo "... _ros_essentials_cpp_generate_messages_check_deps_FibonacciActionGoal"
 	@echo "... sensor_msgs_generate_messages_nodejs"
-	@echo "... test"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... add_two_ints_server"
 	@echo "... scan_subscriber_cpp"

@@ -1,0 +1,8 @@
+prefix=/home/sahil/catkin_ws/install_isolated
+
+Name: ddynamic_reconfigure
+Description: Description of ddynamic_reconfigure
+Version: 0.2.2
+Cflags: -I/home/sahil/catkin_ws/install_isolated/include
+Libs: -L/home/sahil/catkin_ws/install_isolated/lib -lddynamic_reconfigure
+Requires: roscpp dynamic_reconfigure
